@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowStone" translatesAutoresizingMaskIntoConstraints="NO" id="2s2-ms-nvR">
+                                <rect key="frame" x="0.0" y="44" width="375" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="fFb-AL-Qjb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2a-aO-POb">
+                                <rect key="frame" x="171.66666666666666" y="340" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textCraft" translatesAutoresizingMaskIntoConstraints="NO" id="Idp-1q-XAy">
+                                <rect key="frame" x="42.666666666666657" y="420" width="290" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ORX-tT-atu"/>
+                                    <constraint firstAttribute="width" constant="290" id="XJy-k5-heO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2s2-ms-nvR" secondAttribute="trailing" id="5qt-gk-wgg"/>
+                            <constraint firstItem="Idp-1q-XAy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J7E-y8-tZJ"/>
+                            <constraint firstItem="K2a-aO-POb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LeW-zi-h5m"/>
+                            <constraint firstItem="K2a-aO-POb" firstAttribute="top" secondItem="2s2-ms-nvR" secondAttribute="bottom" constant="66" id="c2f-GC-hA7"/>
+                            <constraint firstItem="2s2-ms-nvR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gp0-N7-Bn7"/>
+                            <constraint firstItem="2s2-ms-nvR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kFL-0n-2Xa"/>
+                            <constraint firstItem="Idp-1q-XAy" firstAttribute="top" secondItem="K2a-aO-POb" secondAttribute="bottom" constant="50" id="pMt-ow-aRt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" propertyAccessControl="all"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="2s2-ms-nvR" id="B6Q-u9-NeH"/>
+                        <outlet property="pressButton" destination="K2a-aO-POb" id="mZo-t3-bT2"/>
+                        <outlet property="titleImageView" destination="Idp-1q-XAy" id="CFd-rL-upe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70.28985507246378" y="20.424107142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="textCraft" width="618" height="85"/>
+        <image name="yellowStone" width="307.20001220703125" height="175"/>
+    </resources>
+</document>
