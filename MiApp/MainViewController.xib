@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MiApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImageView" destination="PWL-D0-PoF" id="Eof-4J-9vi"/>
+                <outlet property="pressButton" destination="cra-2n-dqe" id="Kow-wE-0EE"/>
+                <outlet property="titleImageView" destination="w35-iV-NA5" id="ZhW-XE-xMC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cra-2n-dqe">
+                    <rect key="frame" x="155.5" y="318.5" width="64" height="30"/>
+                    <state key="normal" title="Push me!"/>
+                    <connections>
+                        <action selector="btnPressed:" destination="-1" eventType="touchUpInside" id="gmj-dS-q9h"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowStone" translatesAutoresizingMaskIntoConstraints="NO" id="PWL-D0-PoF">
+                    <rect key="frame" x="0.0" y="20" width="375" height="230"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="230" id="GEP-jo-bWF"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textCraft" translatesAutoresizingMaskIntoConstraints="NO" id="w35-iV-NA5">
+                    <rect key="frame" x="42.5" y="422" width="290" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="HYd-bA-4af"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="bnv-3A-c6i"/>
+                        <constraint firstAttribute="width" constant="290" id="meO-t1-r52"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w35-iV-NA5" firstAttribute="centerX" secondItem="cra-2n-dqe" secondAttribute="centerX" id="0CO-mp-nij"/>
+                <constraint firstItem="PWL-D0-PoF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5cI-f5-IHK"/>
+                <constraint firstItem="PWL-D0-PoF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5iB-4I-emU"/>
+                <constraint firstItem="PWL-D0-PoF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LWK-oy-Kng"/>
+                <constraint firstItem="cra-2n-dqe" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="h8g-48-w24"/>
+                <constraint firstItem="w35-iV-NA5" firstAttribute="top" secondItem="cra-2n-dqe" secondAttribute="bottom" constant="73.5" id="owo-50-grh"/>
+                <constraint firstItem="cra-2n-dqe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pAV-8N-PdR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="textCraft" width="618" height="85"/>
+        <image name="yellowStone" width="307.20001220703125" height="175"/>
+    </resources>
+</document>
